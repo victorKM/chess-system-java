@@ -23,12 +23,19 @@ public class Board {
       this.rows = rows;
     }
 
-    public Integer getColumn() {
+    public Integer getColumns() {
       return columns;
     }
 
-    public void setColumn(Integer column) {
-      this.columns = column;
+    public void setColumns(Integer columns) {
+      this.columns = columns;
     }
-    
+
+    public Piece piece(Integer row, Integer column) {
+      return pieces[row][column];
+    }
+
+    public Piece piece(Position position) {
+      return pieces[position.getRow()][position.getColumn()];
+    }
 }
