@@ -3,15 +3,15 @@ package boardgame;
 public class Board {
 
     private Integer rows;
-    private Integer column;
+    private Integer columns;
     private Piece[][] pieces;
 
     public Board(){
     }
 
-    public Board(Integer rows, Integer column) {
+    public Board(Integer rows, Integer columns) {
       this.rows = rows;
-      this.column = column;
+      this.columns = columns;
       pieces = new Piece[rows][columns];
     }
 
@@ -24,11 +24,11 @@ public class Board {
     }
 
     public Integer getColumn() {
-      return column;
+      return columns;
     }
 
     public void setColumn(Integer column) {
-      this.column = column;
+      this.columns = column;
     }
     
 }
