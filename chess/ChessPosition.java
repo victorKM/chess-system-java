@@ -28,9 +28,6 @@ public class ChessPosition {
   }
 
   protected Position toPosition() {
-    // matrix_row = 8 - chess_row
-    // matrix_column = chess-column - 'a'
-
     return new Position(8 - row, column - 'a');
   }
 
